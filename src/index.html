@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BJ Soliciting - Briggs & Joey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .hero-section {
+        background-image: linear-gradient(
+            rgba(10, 20, 40, 0.7),
+            rgba(10, 20, 40, 0.7)
+          ),
+          url("../static/logo.png");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div>
+          <!-- Replace with the actual URL of your logo -->
+          <img
+            src="../static/logo-long.png"
+            alt="BJ Soliciting Logo"
+            class="h-12 md:h-16"
+            onerror="this.onerror=null;this.src='https://placehold.co/200x60/ffffff/2d3748?text=BJ+Soliciting';"
+          />
+        </div>
+        <div class="hidden md:flex items-center space-x-6">
+          <a
+            href="#about"
+            class="text-gray-600 hover:text-blue-800 transition duration-300"
+            >About Us</a
+          >
+          <a
+            href="#services"
+            class="text-gray-600 hover:text-blue-800 transition duration-300"
+            >Services</a
+          >
+          <a
+            href="#contact"
+            class="bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-blue-900 transition duration-300"
+            >Contact Us</a
+          >
+        </div>
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-600 focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <a
+          href="#about"
+          class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100"
+          >About Us</a
+        >
+        <a
+          href="#services"
+          class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100"
+          >Services</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100"
+          >Contact Us</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20 md:py-32">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+          Expert Legal Counsel for Your Peace of Mind
+        </h1>
+        <p class="text-lg md:text-xl mb-8 text-gray-300">
+          Briggs & Joey: Committed to delivering exceptional legal services with
+          integrity and professionalism.
+        </p>
+        <a
+          href="#contact"
+          class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300 text-lg"
+          >Schedule a Consultation</a
+        >
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            About BJ Soliciting
+          </h2>
+          <div class="w-24 h-1 bg-blue-800 mx-auto mb-6"></div>
+          <p class="text-gray-600 leading-relaxed">
+            At Briggs & Joey, we pride ourselves on a tradition of legal
+            excellence and a forward-thinking approach. Founded on the
+            principles of dedication, trust, and client-focused results, our
+            firm provides comprehensive legal solutions tailored to meet the
+            unique needs of each client. Our team of experienced solicitors is
+            committed to navigating complex legal landscapes to achieve the best
+            possible outcomes for you, your family, or your business.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Our Practice Areas
+          </h2>
+          <div class="w-24 h-1 bg-blue-800 mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="mb-4 text-blue-800">
+              <svg
+                class="w-16 h-16 mx-auto"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Corporate Law</h3>
+            <p class="text-gray-600">
+              Providing expert advice on business formation, mergers,
+              acquisitions, and corporate governance.
+            </p>
+          </div>
+          <!-- Service 2 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="mb-4 text-blue-800">
+              <svg
+                class="w-16 h-16 mx-auto"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Real Estate Law</h3>
+            <p class="text-gray-600">
+              Handling all aspects of property transactions, from residential
+              conveyancing to commercial leases.
+            </p>
+          </div>
+          <!-- Service 3 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300"
+          >
+            <div class="mb-4 text-blue-800">
+              <svg
+                class="w-16 h-16 mx-auto"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Family Law</h3>
+            <p class="text-gray-600">
+              Offering compassionate and discreet guidance on matters of
+              divorce, custody, and prenuptial agreements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-6 text-center">
+        <img
+          src="../static/logo-long.png"
+          alt="BJ Soliciting Logo"
+          class="h-16 mx-auto mb-6"
+        />
+        <p class="mb-2">38 Erw Goch</p>
+        <p class="mb-2">
+          Email:
+          <a href="mailto:contact@bjsoliciting.com" class="hover:text-blue-400"
+            >contact@bj-soliciting.xyz</a
+          >
+        </p>
+        <p class="mb-6">
+          Phone:
+          <a href="tel:+1234567890" class="hover:text-blue-400"
+            >(123) 456-7890</a
+          >
+        </p>
+        <p class="text-sm text-gray-400">
+          &copy; 2025 BJ Soliciting - Briggs & Joey. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
